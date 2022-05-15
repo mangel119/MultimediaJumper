@@ -1698,22 +1698,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 49,
-          "layer": "",
-          "locked": false,
-          "name": "Coin",
-          "persistentUuid": "a5a1e199-c9f5-4228-8e87-a803b6af7211",
-          "width": 48.80241775512695,
-          "x": 229,
-          "y": 385,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -4184,7 +4168,7 @@
                   "parameters": [
                     "itemChance",
                     "=",
-                    "60"
+                    "20"
                   ],
                   "subInstructions": []
                 },
