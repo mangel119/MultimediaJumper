@@ -862,6 +862,96 @@
         "name": "assets/Collectibles/frame-10.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_game_music_principal.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_game_music_principal.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_RedNeuronal.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_RedNeuronal.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
+      },
+      {
+        "file": "#7 A Secret of the Moon (Planetes Original Sound Track Album 1).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "#7 A Secret of the Moon (Planetes Original Sound Track Album 1).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../../Sync/Music/check/#7 A Secret of the Moon (Planetes Original Sound Track Album 1).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "../../../../Sync/Music/check/#7 A Secret of the Moon (Planetes Original Sound Track Album 1).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "Explosion.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Explosion.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_redWifi.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_redWifi.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_realidadVirtual.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_realidadVirtual.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_controljuegos.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_controljuegos.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_claqueta.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_claqueta.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/Personaje/Tomar_objeto.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/Personaje/Tomar_objeto.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1695,6 +1785,22 @@
           "x": -16.88275146484375,
           "y": -95,
           "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Item",
+          "persistentUuid": "10cbbee1-928f-4b1a-8faa-6a6b9da15237",
+          "width": 0,
+          "x": 206,
+          "y": 388,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4303,6 +4409,21 @@
                     "PlayerSprite",
                     "\"Effect\"",
                     "no"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/BancoSonidos/BackGround_Music/bg_game_music_principal.wav",
+                    "0",
+                    "yes",
+                    "3",
+                    "RandomFloatInRange(0.9, 1.1)"
                   ],
                   "subInstructions": []
                 }
@@ -7684,6 +7805,31 @@
                     "\"Mode\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/BancoSonidos/Personaje/Tomar_objeto.wav",
+                    "",
+                    "20",
+                    "RandomFloatInRange(0.9, 1.1)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": [
@@ -7713,6 +7859,21 @@
                         "gameMode",
                         "=",
                         "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/BancoSonidos/BackGround_Music/bg_music_realidadVirtual.wav",
+                        "1",
+                        "yes",
+                        "3",
+                        "RandomFloatInRange(0.9, 1.1)"
                       ],
                       "subInstructions": []
                     }
@@ -7745,6 +7906,21 @@
                         "gameMode",
                         "=",
                         "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/BancoSonidos/BackGround_Music/bg_music_controljuegos.wav",
+                        "1",
+                        "yes",
+                        "3",
+                        "RandomFloatInRange(0.9, 1.1)"
                       ],
                       "subInstructions": []
                     }
@@ -7777,6 +7953,21 @@
                         "gameMode",
                         "=",
                         "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/BancoSonidos/BackGround_Music/bg_music_redWifi.wav",
+                        "1",
+                        "yes",
+                        "3",
+                        "RandomFloatInRange(0.9, 1.1)"
                       ],
                       "subInstructions": []
                     }
@@ -7809,6 +8000,21 @@
                         "gameMode",
                         "=",
                         "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/BancoSonidos/BackGround_Music/bg_music_claqueta.wav",
+                        "1",
+                        "yes",
+                        "3",
+                        "RandomFloatInRange(0.9, 1.1)"
                       ],
                       "subInstructions": []
                     }
@@ -7841,6 +8047,21 @@
                         "gameMode",
                         "=",
                         "5"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/BancoSonidos/BackGround_Music/bg_music_RedNeuronal.mp3",
+                        "1",
+                        "yes",
+                        "3",
+                        "RandomFloatInRange(0.9, 1.1)"
                       ],
                       "subInstructions": []
                     }
@@ -8012,6 +8233,28 @@
                   "parameters": [
                     "platMovie",
                     "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
                     "0"
                   ],
                   "subInstructions": []
@@ -8693,6 +8936,132 @@
                   "subInstructions": []
                 }
               ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Background Music",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "gameMode",
+                    "=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
               "events": []
             }
           ],
