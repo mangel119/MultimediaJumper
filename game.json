@@ -952,6 +952,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/BancoSonidos/BackGround_Music/bg_music_interfaces.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/BancoSonidos/BackGround_Music/bg_music_interfaces.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -8949,123 +8958,92 @@
           "name": "Background Music",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
               ],
-              "actions": [],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "4"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "gameMode",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": []
+              "subInstructions": []
             }
           ],
-          "parameters": []
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_game_music_principal.wav"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_music_claqueta.wav"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_music_controljuegos.wav"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_music_realidadVirtual.wav"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_music_RedNeuronal.mp3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/BancoSonidos/BackGround_Music/bg_music_redWifi.wav"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
